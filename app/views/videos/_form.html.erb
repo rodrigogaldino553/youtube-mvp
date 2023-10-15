@@ -12,13 +12,18 @@
   <% end %>
 
   <div>
+    <%= form.label :video %>
+    <%= form.file_field :video %>
+  </div>
+
+  <div>
     <%= form.label :title, style: "display: block" %>
     <%= form.text_field :title %>
   </div>
 
   <div>
     <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
+    <%= form.rich_text_area :description %>
   </div>
 
   <div>
